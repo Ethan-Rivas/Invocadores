@@ -1,0 +1,11 @@
+<div class="btn-group" uib-dropdown>
+  <button type="button" class="btn btn-default" uib-dropdown-toggle>
+    {{selected.attributes[optionsLabel] || 'Seleccionar'}} <span class="caret"></span>
+  </button>
+
+  <ul class="uib-dropdown-menu">
+    <li ng-repeat="option in options">
+      <a href ng-click="select(option)">{{option.attributes[optionsLabel]}}</a>
+    </li>
+  </ul>
+</div>

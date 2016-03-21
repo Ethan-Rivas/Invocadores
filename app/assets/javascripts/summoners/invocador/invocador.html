@@ -1,0 +1,14 @@
+<div class="sp">
+<ul class="nav nav-pills">
+  <li ng-class="{ active: ('invocador.perfil.index' | routeSegmentStartsWith) }">
+    <a href="#/invocador/perfil/index">Perfil</a>
+  </li>
+
+  <li class="disabled" ng-class="{ active: ('invocador.perfil.editar' | routeSegmentStartsWith) }">
+    <a>Ajustes</a>
+  </li>
+</ul>
+
+<div app-view-segment="1"></div>
+
+</div>

@@ -1,0 +1,31 @@
+table {
+  tr {
+    &.removing {
+      opacity: 0.5;
+    }
+
+    th, td {
+      &.actions {
+        text-align: center;
+        width: 125px;
+
+        a {
+          color: #333;
+
+          &:hover {
+            color: #337ab7;
+          }
+        }
+      }
+    }
+
+    th {
+      &.actions {
+        a {
+          color: #333;
+          display: block;
+        }
+      }
+    }
+  }
+}

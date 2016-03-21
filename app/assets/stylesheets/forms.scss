@@ -1,0 +1,52 @@
+form {
+  .row {
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  input[type="text"], input[type="number"], textarea.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0;
+  }
+
+  input[type="text"], input[type="number"], button.dropdown-toggle {
+    height: 45px;
+    border-radius: 0;
+  }
+
+  textarea.form-control {
+    height: 175px;
+  }
+
+  .buttons {
+    .col-xs-6 {
+      text-align: center;
+
+      .btn {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .error {
+    background: #b83333;
+
+    label {
+      color: #fff;
+    }
+
+    ul.errors {
+      li {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div ng-class="{ error: resource.errors[attribute] }">
+  <label>{{label}}</label>
+  <br />
+
+  <input type="text" class="form-control"
+    ng-model="resource.attributes[attribute]" ng-if="type=='text'" />
+
+  <textarea class="form-control" ng-model="resource.attributes[attribute]"
+    ng-if="type=='textarea'"></textarea>
+
+  <dropdown-selector ng-model="resource.attributes[attribute]"
+    options-service="optionsService" options-label="optionsLabel"
+    ng-if="type=='dropdown'"></dropdown-selector>
+
+  <ul ng-show="resource.errors[attribute]" class="errors">
+    <li ng-repeat="error in resource.errors[attribute]">
+      {{error}}
+    </li>
+  </ul>
+</div>

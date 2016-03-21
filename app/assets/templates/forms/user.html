@@ -1,0 +1,30 @@
+<form class="container-fluid">
+  <div class="row">
+    <form-field class="col-md-6"
+      label="Nombre" attribute="first_name"></form-field>
+
+    <form-field class="col-md-6"
+      label="Apellido" attribute="last_name"></form-field>
+  </div>
+
+  <div class="row">
+    <form-field class="col-md-6"
+      label="Nombre de Invocador" attribute="summoner_name"></form-field>
+  </div>
+
+  <div class="row buttons">
+    <div class="col-md-6 col-md-offset-6 container-fluid">
+      <div class="row">
+        <div class="col-xs-6">
+          <button class="btn btn-success" ng-click="save()">
+            Guardar
+          </button>
+        </div>
+
+        <div class="col-xs-6">
+          <a ng-href="{{back}}" class="btn btn-danger">Cancelar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
