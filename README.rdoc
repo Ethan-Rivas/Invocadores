@@ -1,28 +1,31 @@
-== README
+== INVOCADORES
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is just a test of the League of Legends Developer API.
 
-Things you may want to cover:
+== Easy steps to configure the repo:
 
-* Ruby version
+1) Clone the repo.
 
-* System dependencies
+2) Run <tt>bundle install</tt>.
 
-* Configuration
+== Configuration:
 
-* Database creation
+1) Setup your <tt>config/database.yml</tt>.
 
-* Database initialization
+2) Run <tt>rake db:setup</tt>.
 
-* How to run the test suite
+3) Run <tt>rails server</tt>.
 
-* Services (job queues, cache servers, search engines, etc.)
+4) Go to <tt>app/assets/javascripts/summoners/search.js</tt> and add your API Key provided by https://developer.riotgames.com
 
-* Deployment instructions
+5) Enter to <tt>localhost:3000</tt> and you'll see a login page.
 
-* ...
+== Pretty small Tutorial:
 
+1) Register/Login to the site.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+2) Write the Summoner Name and click the search button, here you'll see a page with some data about the Summoner like Ranked info.
+
+== MORE METHODS
+
+If you want to add more methods using the League of Legends API you can read about them here: https://developer.riotgames.com/api/methods
